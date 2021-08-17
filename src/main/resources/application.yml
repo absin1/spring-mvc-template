@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    com.auth0.example: INFO
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: Bfdk1Zwzvz3Zz9dwln3KtgAQfFf5aQVH
+            client-secret: _TOxo6S-xksq8J34j4IZx3nk7_3_pqapMJmtiH5hS51RKv3me3m-T-1IxbeDbZe9
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+            # trailing slash is important!
+            issuer-uri: https://dev-fxv5yk-w.us.auth0.com/
